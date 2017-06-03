@@ -9,9 +9,6 @@ module.exports = function(env) {
         output: {
             filename: '[name].[chunkhash].js',
             path: path.resolve(__dirname, 'dist')
-        },
-        /*plugins: [
-            new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
-        ]*/
+        }
     }
 }

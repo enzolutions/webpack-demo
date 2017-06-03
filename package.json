@@ -6,9 +6,13 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build:multiple": "webpack --config webpack.config.multiple.js",
-    "build:implicit": "webpack --config webpack.config.implicit.vendor.js",
-    "build:explicit": "webpack --config webpack.config.explicit.vendor.js",
-    "build:explicit-implicit": "webpack --config webpack.config.explicit-implicit.vendor.js"
+    "build:implicit": "webpack --config webpack.config.implicit.js",
+    "build:explicit": "webpack --config webpack.config.explicit.js",
+    "build:ignore": "webpack --config webpack.config.uglify.js",
+    "build:split": "webpack --config webpack.config.split.js",
+    "build:uglify": "webpack --config webpack.config.uglify.js",
+    "build:compression": "webpack --config webpack.config.compression.js",
+    "build:css": "webpack --config webpack.config.css.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +27,15 @@
     "react-dom": "^15.5.4",
     "socket.io": "^2.0.1",
     "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "compression-webpack-plugin": "^0.4.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "style-loader": "^0.18.1",
+    "webpack-bundle-analyzer": "^2.8.2",
+    "webpack-uglify-js-plugin": "^1.1.9"
   }
 }
