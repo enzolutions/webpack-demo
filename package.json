@@ -8,7 +8,7 @@
     "build:multiple": "webpack --config webpack.config.multiple.js",
     "build:implicit": "webpack --config webpack.config.implicit.js",
     "build:explicit": "webpack --config webpack.config.explicit.js",
-    "build:ignore": "webpack --config webpack.config.uglify.js",
+    "build:ignore": "webpack --config webpack.config.ignore.js",
     "build:split": "webpack --config webpack.config.split.js",
     "build:uglify": "webpack --config webpack.config.uglify.js",
     "build:compression": "webpack --config webpack.config.compression.js",
